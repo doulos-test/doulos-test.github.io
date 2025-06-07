@@ -69,11 +69,17 @@
 
   .schedule-image {
     width: 100%;
-    max-width: 800px;
+    max-width: 1300px;
     height: auto;
     display: block;
     margin: auto;
     border-radius: 8px;
   }
   
-  
+  /* ========== MOBILE STYLES ========== */
+@media (max-width: 768px) {
+  .schedule-image {
+    width: 100%;
+    max-width: 100%;
+  }
+}
