@@ -152,7 +152,7 @@ nav {
     margin: 2rem auto;
     padding: 0 1rem;
   }
-
+/* 
   main section {
     margin-bottom: 3rem;
   }
@@ -165,5 +165,42 @@ nav {
 
   main p {
     font-size: 1.1rem;
+  } */
+
+  /* Make sure html and body fill the viewport */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
+
+  /* Body as flex container */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* full viewport height */
+    font-family: 'Arial', sans-serif;
+    background: #fafafa;
+    color: #2d3436;
+    line-height: 1.6;
+    padding: 20px;
+  }
+
+  /* Main content takes all available space */
+  main, section {
+    flex: 1 0 auto;
+  }
+
+  /* Footer sticks to bottom */
+  footer {
+    flex-shrink: 0; /* prevent footer from shrinking */
+    background-color: #0984e3;
+    color: #dfe6e9;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.875rem;
+    border-radius: 0 0 8px 8px;
+    margin-top: auto; /* pushes footer down */
+  }
+
 }
