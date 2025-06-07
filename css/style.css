@@ -6,11 +6,27 @@ body {
   color: #2d3748;
 }
 
-header, footer {
+header{
+  background-image: url('../images/Doulos_logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+  padding: 6rem 1rem;
+  position: relative;
+}
+
+/* Footer sticks to bottom */
+footer {
+  flex-shrink: 0; /* prevent footer from shrinking */
   background-color: #2d3748;
-  color: white;
+  color: #dfe6e9;
   text-align: center;
   padding: 1rem;
+  font-size: 0.875rem;
+  border-radius: 0 0 8px 8px;
+  margin-top: auto; /* pushes footer down */
 }
 
 nav {
@@ -173,18 +189,6 @@ nav {
   /* Main content takes all available space */
   main, section {
     flex: 1 0 auto;
-  }
-
-  /* Footer sticks to bottom */
-  footer {
-    flex-shrink: 0; /* prevent footer from shrinking */
-    background-color: #0984e3;
-    color: #dfe6e9;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.875rem;
-    border-radius: 0 0 8px 8px;
-    margin-top: auto; /* pushes footer down */
   }
   
   /* section border */
