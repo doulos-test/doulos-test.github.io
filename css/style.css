@@ -117,6 +117,7 @@ nav {
     font-size: 1rem;
     line-height: 1;
     padding-left: 0.5rem;
+    display: none;
   }
 }
 
@@ -127,23 +128,6 @@ nav {
   }
   .dropdown:hover > .dropdown-content {
     display: block;
-  }
-
-  /* Register Button */
-  .btn-register {
-    display: inline-block;
-    background-color: #2a4365;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
-    margin-top: 1rem;
-  }
-  
-  .btn-register:hover {
-    background-color: #1e3654;
   }
   
   /* Main Content */
@@ -202,5 +186,34 @@ nav {
     border-radius: 0 0 8px 8px;
     margin-top: auto; /* pushes footer down */
   }
+  
+  /* section border */
+  section {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Optional: Remove border from last section */
+  section:last-of-type {
+    border-bottom: none;
+  }
 
+}
+
+/* Register Button */
+.btn-register {
+  display: inline-block;
+  background-color: #2a4365;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-register:hover {
+  background-color: #1e3654;
 }
